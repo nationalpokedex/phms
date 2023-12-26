@@ -9,7 +9,7 @@ json_file = open('../national-pokedex-ts/src/data/pokedex.json', 'r')
 data = json.load(json_file)
 json_file.close()
 total_keys = len(data)
-num_cols = 32
+num_cols = 30
 pic_height = 40
 pic_width = 40
 num_rows = total_keys // num_cols
@@ -30,7 +30,7 @@ for index, species_id in enumerate(data):
     print(species_id)
     continue
 canvas.show()
-canvas.save('combined_2.png')
+canvas.save('combined.png')
 
 # import os
 # import json
